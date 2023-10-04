@@ -1,0 +1,11 @@
+C:\Users\roman.jevstafjev\Documents\GitHub\privet\Source\Lrmkt.FormsSystem\Lrmkt.FormsSystem\Lrmkt.FormsSystem.Entities\bin\Debug\net7.0\Lrmkt.FormsSystem.Entities.deps.json
+C:\Users\roman.jevstafjev\Documents\GitHub\privet\Source\Lrmkt.FormsSystem\Lrmkt.FormsSystem\Lrmkt.FormsSystem.Entities\bin\Debug\net7.0\Lrmkt.FormsSystem.Entities.dll
+C:\Users\roman.jevstafjev\Documents\GitHub\privet\Source\Lrmkt.FormsSystem\Lrmkt.FormsSystem\Lrmkt.FormsSystem.Entities\bin\Debug\net7.0\Lrmkt.FormsSystem.Entities.pdb
+C:\Users\roman.jevstafjev\Documents\GitHub\privet\Source\Lrmkt.FormsSystem\Lrmkt.FormsSystem\Lrmkt.FormsSystem.Entities\obj\Debug\net7.0\Lrmkt.FormsSystem.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\roman.jevstafjev\Documents\GitHub\privet\Source\Lrmkt.FormsSystem\Lrmkt.FormsSystem\Lrmkt.FormsSystem.Entities\obj\Debug\net7.0\Lrmkt.FormsSystem.Entities.AssemblyInfoInputs.cache
+C:\Users\roman.jevstafjev\Documents\GitHub\privet\Source\Lrmkt.FormsSystem\Lrmkt.FormsSystem\Lrmkt.FormsSystem.Entities\obj\Debug\net7.0\Lrmkt.FormsSystem.Entities.AssemblyInfo.cs
+C:\Users\roman.jevstafjev\Documents\GitHub\privet\Source\Lrmkt.FormsSystem\Lrmkt.FormsSystem\Lrmkt.FormsSystem.Entities\obj\Debug\net7.0\Lrmkt.FormsSystem.Entities.csproj.CoreCompileInputs.cache
+C:\Users\roman.jevstafjev\Documents\GitHub\privet\Source\Lrmkt.FormsSystem\Lrmkt.FormsSystem\Lrmkt.FormsSystem.Entities\obj\Debug\net7.0\Lrmkt.FormsSystem.Entities.dll
+C:\Users\roman.jevstafjev\Documents\GitHub\privet\Source\Lrmkt.FormsSystem\Lrmkt.FormsSystem\Lrmkt.FormsSystem.Entities\obj\Debug\net7.0\refint\Lrmkt.FormsSystem.Entities.dll
+C:\Users\roman.jevstafjev\Documents\GitHub\privet\Source\Lrmkt.FormsSystem\Lrmkt.FormsSystem\Lrmkt.FormsSystem.Entities\obj\Debug\net7.0\Lrmkt.FormsSystem.Entities.pdb
+C:\Users\roman.jevstafjev\Documents\GitHub\privet\Source\Lrmkt.FormsSystem\Lrmkt.FormsSystem\Lrmkt.FormsSystem.Entities\obj\Debug\net7.0\ref\Lrmkt.FormsSystem.Entities.dll

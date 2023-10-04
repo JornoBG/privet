@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Lrmkt.FormsSystem.Web.props" />
+</Project>
