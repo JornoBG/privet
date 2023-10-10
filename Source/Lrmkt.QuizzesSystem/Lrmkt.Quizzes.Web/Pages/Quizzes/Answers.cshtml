@@ -1,0 +1,56 @@
+﻿@page
+@model Lrmkt.QuizzesSystem.Web.Pages.Quizzes.AnswersModel
+@{
+    ViewData["Title"] = "Answers";
+}
+
+<a asp-page="/Admin/Index">Back</a>
+
+<div class="col">
+    <h1>@Model.Quiz!.Title</h1>
+
+    <h2>Questions results</h2>
+    <div>
+        @foreach (var question in Model.Quiz.Questions!)
+        {
+            <h3>@question.Text</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Option</th>
+                        <th scope="col">Answers</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var option in question.Options!)
+                    {
+                        <tr>
+                            <td>@option.Text</td>
+                            @if (Model.Quiz.Answers != 0)
+                            {
+                                <td>@option.Choices (@(option.Choices * 100d / Model.Quiz.Answers)%)</td>
+                            }
+                            else
+                            {
+                                <td>0</td>
+                            }
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+
+    <h2>Feedbacks</h2>
+    <div>
+        @foreach (var feedback in Model.Quiz.Feedbacks!)
+        {
+            <div class="card mb-2">
+                <div class="card-body">
+                    <h5 class="card-title">@feedback.UserName</h5>
+                    <p class="card-text">@feedback.Text</p>
+                </div>
+            </div>
+        }
+    </div>
+</div>

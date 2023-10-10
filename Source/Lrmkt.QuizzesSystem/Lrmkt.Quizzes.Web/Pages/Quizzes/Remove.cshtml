@@ -1,0 +1,20 @@
+﻿@page
+@model Lrmkt.QuizzesSystem.Web.Pages.Quizzes.RemoveModel
+@{
+    ViewData["Title"] = "Remove quiz";
+}
+
+<a asp-page="/Admin/Index">Back</a>
+
+<h1>@ViewData["Title"]</h1>
+<div class="col-md-6">
+    <form method="post">
+        <h4>Are you sure you want to remove the quiz <b>@Model.Quiz!.Title</b>?</h4>
+        <hr />
+
+        <input hidden asp-for="Quiz!.Id" />
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Remove</button>
+        </div>
+    </form>
+</div>

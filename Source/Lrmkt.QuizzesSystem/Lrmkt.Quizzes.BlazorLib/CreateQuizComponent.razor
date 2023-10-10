@@ -1,0 +1,62 @@
+@inherits CreateQuizModel
+
+<div class="col">
+    <h3>Create quiz</h3>
+
+    <div class="mb-3">
+        <label class="form-label">Quiz title</label>
+        <input type="text" class="form-control" @bind="Title" @bind:event="oninput">
+    </div>
+
+    <div class="mb-3">
+        <button class="btn btn-outline-info" @onclick="AddQuestion">
+            Add question
+        </button>
+    </div>
+
+    @foreach (var question in Questions)
+    {
+        <div class="mb-3">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" @bind="question.Text" @bind:event="oninput">
+                <button class="btn btn-outline-danger" type="button" @onclick="() => RemoveQuestion(question)">x</button>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    Options
+                </div>
+                <div class="card-body">
+                    @foreach (var option in question.Options)
+                    {
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" @bind="option.Text" />
+                            <button class="btn btn-outline-danger" type="button" @onclick="() => RemoveOption(question, option)">x</button>
+                        </div>
+                    }
+                    <button class="btn btn-outline-info" @onclick="() => AddOption(question)">
+                        Add option
+                    </button>
+                </div>
+            </div>
+        </div>
+    }
+
+    <div class="mb-3">
+        <button class="btn btn-outline-primary" @onclick="SaveQuiz">
+            Save
+        </button>
+    </div>
+</div>
+
+<div class="col">
+    <ul>
+        @if (Errors.Any())
+        {
+            foreach (var error in Errors)
+            {
+                <li class="text-danger">@error</li>
+            }
+        }
+    </ul>
+</div>

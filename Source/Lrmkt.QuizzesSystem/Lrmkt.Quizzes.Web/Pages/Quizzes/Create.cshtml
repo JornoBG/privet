@@ -1,0 +1,14 @@
+﻿@page
+@using Lrmkt.QuizzesSystem.BlazorLib;
+@model Lrmkt.QuizzesSystem.Web.Pages.Quizzes.CreateModel
+@{
+    ViewData["Title"] = "Create quiz";
+}
+
+<a asp-page="/Admin/Index">Back</a>
+
+<component type="typeof(CreateQuizComponent)" render-mode="ServerPrerendered" />
+
+@section Scripts {
+    <script src="_framework/blazor.server.js"></script>
+}
