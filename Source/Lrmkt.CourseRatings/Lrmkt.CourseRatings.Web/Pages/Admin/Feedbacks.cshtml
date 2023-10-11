@@ -1,0 +1,18 @@
+﻿@page
+@model Lrmkt.CourseRatings.Web.Pages.Admin.FeedbacksModel
+@{
+    ViewData["Title"] = "Feedbacks";
+}
+
+<h1>@ViewData["Title"]</h1>
+<div class="col">
+    @foreach (var feedback in Model.Feedbacks)
+    {
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">@feedback.UserName</h5>
+                <p class="card-text">@feedback.Text</p>
+            </div>
+        </div>
+    }
+</div>

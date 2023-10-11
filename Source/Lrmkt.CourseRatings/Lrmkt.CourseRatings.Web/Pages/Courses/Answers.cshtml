@@ -1,0 +1,37 @@
+﻿@page
+@model Lrmkt.CourseRatings.Web.Pages.Courses.AnswersModel
+@{
+    ViewData["Title"] = "Answers";
+}
+
+<div class="col">
+    <h1>@Model.Course!.Title</h1>
+
+    <h2>Questions results</h2>
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Question</th>
+                    <th scope="col">Average raiting</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var question in Model.Course.Questions!)
+                {
+                    <tr>
+                        <td>@question.Text</td>
+                        @if (question.Raitings is not null && question.Raitings.Any())
+                        {
+                            <td>@question.Raitings.Average(x => x.Value)</td>
+                        }
+                        else
+                        {
+                            <td>0</td>
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

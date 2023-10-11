@@ -1,0 +1,12 @@
+﻿@page
+@using Lrmkt.CourseRatings.BlazorLib;
+@model Lrmkt.CourseRatings.Web.Pages.Courses.CreateModel
+@{
+    ViewData["Title"] = "Create course";
+}
+
+<component type="typeof(CreateCourseComponent)" render-mode="ServerPrerendered" />
+
+@section Scripts {
+    <script src="_framework/blazor.server.js"></script>
+}

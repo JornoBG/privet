@@ -1,0 +1,31 @@
+﻿@page
+@model Lrmkt.CourseRatings.Web.Pages.Admin.IndexModel
+@{
+    ViewData["Title"] = "Admin";
+}
+
+<a asp-page="/Courses/Create">Create course</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Title</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var quiz in Model.Courses)
+        {
+            <tr>
+                <td>@quiz.Title</td>
+                <td>
+                    <a asp-page="/Courses/Answers" asp-route-id="@quiz.Id">Answers</a>
+                </td>
+                <td>
+                    <a asp-page="/Courses/Remove" asp-route-id="@quiz.Id">Remove</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
